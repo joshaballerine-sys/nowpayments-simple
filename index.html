@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>پرداخت با کریپتو - دموی ساده</title>
+</head>
+<body>
+  <h1>سفارش تست</h1>
+  <p>برای تست روی دکمه زیر بزنید تا اینویس NOWPayments ساخته شود.</p>
+  <form action="/pay" method="POST">
+    <label>مبلغ (مثلاً 10): <input type="number" name="amount" value="10" step="0.01" required></label><br><br>
+    <label>ارز قیمت‌گذاری (USD/EUR/IRR ...): <input type="text" name="currency" value="usd" required></label><br><br>
+    <label>توضیح سفارش: <input type="text" name="description" value="سفارش تست"></label><br><br>
+    <button type="submit">پرداخت با کریپتو</button>
+  </form>
+</body>
+</html>
